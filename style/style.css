@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #192523;
+  color: #95796d;
+}
+
+body q {
+  font-family: "Nothing You Could Do", cursive;
+}
+
+body header {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+}
+
+body header .header__item {
+  margin: 20px;
+}
+
+body header .header__item h1 {
+  font-family: "Roboto", sans-serif;
+  color: #cc9e00;
+  font-size: 4em;
+  font-weight: lighter;
+  text-align: center;
+}
+
+body header .header__item blockquote {
+  text-align: center;
+  font-family: "Nothing You Could Do", cursive;
+  font-size: 1.5em;
+}
+
+body header .header__item img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+body header .header__item #img-caption {
+  margin: 15px 0px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+}
+
+body #first_paragraph {
+  width: 50%;
+}
+
+@media (max-width: 500px) {
+  body #first_paragraph {
+    width: 100%;
+  }
+}
+
+body #first_paragraph #text_first_paragraph {
+  width: 100%;
+  margin-bottom: 20px;
+  line-height: 2;
+  font-family: "Didact Gothic", sans-serif;
+  margin-left: 280px;
+}
+
+@media (max-width: 900px) {
+  body #first_paragraph #text_first_paragraph {
+    margin: auto;
+    width: 100%;
+    padding: 30px;
+  }
+}
+
+body #img_first_paragraph {
+  width: 30%;
+  float: right;
+  margin-bottom: 100px;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+body #img_first_paragraph :hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+  body #img_first_paragraph {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+  }
+}
+
+body #img_second_paragraph {
+  margin: 150px 100px 50px 300px;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+body #img_second_paragraph :hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+  body #img_second_paragraph {
+    width: 100%;
+    margin: auto;
+    padding: 20px 40px;
+  }
+}
+
+body #second_paragraph {
+  width: 60%;
+}
+
+@media (max-width: 600px) {
+  body #second_paragraph {
+    width: 100%;
+  }
+}
+
+body #second_paragraph #text_second_paragraph {
+  width: 100%;
+  margin-bottom: 20px;
+  line-height: 2;
+  font-family: "Didact Gothic", sans-serif;
+  margin-left: 100px;
+}
+
+@media (max-width: 600px) {
+  body #second_paragraph #text_second_paragraph {
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding: 30px;
+  }
+}
+
+body #third_paragraph {
+  width: 70%;
+  float: right;
+  margin-right: 150px;
+  margin-left: 15px;
+  margin-top: 20px;
+}
+
+body #third_paragraph #text_third_paragraph {
+  width: 100%;
+  margin-bottom: 20px;
+  line-height: 2;
+  font-family: "Didact Gothic", sans-serif;
+}
+
+@media (max-width: 600px) {
+  body #third_paragraph {
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding: 30px;
+  }
+}
+
+body #img_third_paragraph {
+  margin-left: 40px;
+  margin-right: 10px;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+body #img_third_paragraph :hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+body #img_fourth_paragraph {
+  margin: 70px 100px 40px 500px;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+body #img_fourth_paragraph :hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media (max-width: 700px) {
+  body #img_fourth_paragraph {
+    margin: 0 auto;
+    padding: 25px 60px;
+  }
+}
+
+body .data-time__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .data-time__container .data-time__container__item {
+  width: 50%;
+  margin: 10px;
+}
+
+body .data-time__container .data-time__container__item h2 {
+  font-family: "Nothing You Could Do", cursive;
+  font-size: 2em;
+  color: #cc9e00;
+  margin-bottom: 5px;
+}
+
+body .data-time__container .data-time__container__item p {
+  line-height: 1.5;
+  padding-bottom: 10px;
+  font-family: "Didact Gothic", sans-serif;
+}
+
+body .data-time__container .data-time__container__item img {
+  width: 100%;
+}
+
+@media (max-width: 950px) {
+  body .timeline-container {
+    display: none;
+  }
+}
+
+body footer {
+  width: 100vw;
+  background: #cc9e00;
+  margin-top: 200px;
+  text-align: center;
+  color: #192523;
+  font-size: 1.5em;
+  font-family: "Nothing You Could Do", cursive;
+}
+
+body footer .footer__item {
+  width: 100%;
+  padding: 35px 15px;
+}
+
+body footer .footer__item p {
+  width: 100%;
+}
+
+body footer .footer__item p a {
+  text-decoration: none;
+  color: #192523;
+}
+/*# sourceMappingURL=style.css.map */

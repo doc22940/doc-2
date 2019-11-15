@@ -1,0 +1,199 @@
+// variables
+$quote_font: 'Nothing You Could Do', cursive;
+$primary_font:'Roboto', sans-serif;
+$text_font: 'Didact Gothic', sans-serif;
+$primary_color: #cc9e00;
+
+// mixins
+@mixin paragraph {
+    width: 100%;
+    margin-bottom: 20px;
+    line-height: 2;
+    font-family: $text_font;
+}
+@mixin hover {
+    transform: scale(1.1);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #192523;
+    color: #95796d;
+    q{
+        font-family: $quote_font;
+    }
+    header{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        .header__item{
+            margin: 20px;
+            h1{
+                font-family: $primary_font;
+                color: $primary_color;
+                font-size: 4em;
+                font-weight: lighter;
+                text-align: center;
+            }
+            blockquote{
+                text-align: center;
+                font-family: $quote_font;
+                font-size: 1.5em;
+            }
+            img{
+                width: 100%;
+                margin: 0 auto;
+            }
+            #img-caption{
+                margin: 15px 0px;
+                text-align: center;
+                font-family: $primary_font;
+                font-size: 10px;
+            }
+        }
+    }
+    #first_paragraph{
+        width: 50%;
+        @media (max-width: 500px){
+            width: 100%;
+        }
+        #text_first_paragraph{
+            @include paragraph();
+            margin-left: 280px;
+            @media (max-width: 900px){
+                margin: auto;
+                width: 100%;
+                padding: 30px;
+            }
+        }
+    }
+    #img_first_paragraph{
+        width: 30%;
+        float: right;
+        margin-bottom: 100px;
+        transition: all 1s ease-out;
+        :hover{
+            @include hover();
+        }
+        @media (max-width: 600px){
+            width: 100%;
+            margin: auto;
+            padding: 20px;
+        }
+    }
+    #img_second_paragraph{
+        margin: 150px 100px 50px 300px;
+        transition: all 1s ease-out;
+        :hover{
+            @include hover();
+        }
+        @media (max-width: 600px){
+            width: 100%;
+            margin: auto;
+            padding: 20px 40px;
+            
+        }
+    }
+    #second_paragraph{
+        width: 60%;
+        @media (max-width: 600px){
+            width: 100%;
+        }
+        #text_second_paragraph{
+            @include paragraph();
+            margin-left: 100px;
+            @media (max-width: 600px){
+                display: block;
+                width: 100%;
+                margin: auto;
+                padding: 30px;
+            }
+        }
+    }
+    #third_paragraph{
+        width: 70%;
+        float: right;
+        margin-right: 150px;
+        margin-left: 15px;
+        margin-top: 20px;
+        #text_third_paragraph{
+            @include paragraph();
+        }
+        @media (max-width: 600px){
+            display: block;
+            width: 100%;
+            margin: auto;
+            padding: 30px;
+        }
+    }
+    #img_third_paragraph{
+        margin-left: 40px;
+        margin-right: 10px;
+        transition: all 1s ease-out;
+        :hover{
+            @include hover();
+        }
+    }
+    #img_fourth_paragraph{
+        margin: 70px 100px 40px 500px;
+        transition: all 1s ease-out;
+        :hover{
+            @include hover();
+        }
+        @media (max-width: 700px){
+            margin: 0 auto;
+            padding: 25px 60px;
+        }
+    }
+    .data-time__container{
+        display: flex;
+        flex-direction: row;
+        .data-time__container__item{
+            width: 50%;
+            margin: 10px;
+            h2{
+                font-family: $quote_font;
+                font-size: 2em;
+                color:  $primary_color;
+                margin-bottom: 5px;
+            }
+            p{
+                line-height: 1.5;
+                padding-bottom: 10px;
+                font-family: $text_font;
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .timeline-container {
+        @media (max-width: 950px){
+            display: none;
+        }
+    }
+    footer{
+        width: 100vw;
+        background: $primary_color;
+        margin-top: 200px;
+        text-align: center;
+        color:  #192523;
+        font-size: 1.5em;
+        font-family: $quote_font;
+        .footer__item{
+            width: 100%;
+            padding: 35px 15px;
+            p{
+                width: 100%;
+                a{
+                    text-decoration: none;
+                    color:  #192523;
+                }
+            }
+        }
+    }
+}
